@@ -1,18 +1,11 @@
 ---
-
+import Layout from "../layouts/layout.astro";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
+<Layout
+  title="Home | WWU Operating Budgets | Western Washington University">
+<main>
 		<h1>Total (Operating) Revenues</h1>
-		<h2>Tuition + Fees $117.7M</h2>
+		<h2><a href="https://bfp.wwu.edu/fy-operating-budget#tuitionrev">Tuition + Fees $117.7M</a></h2>
 		<p>Tuition is the amount that Western charges students for instruction and the amount of revenue depends on enrollments. However, only a portion of the tuition revenue collected can be used to support university operations. By law, tuition includes an operating fee and a building fee. The building fee revenue can only be used for building projects and maintenance. </p>
 
 		<h2>State Appropriations $104.4M</h2>
@@ -24,14 +17,56 @@
 		<h2>Invest. Income & Differential Tuition $0.8M</h2>
 		<p>This revenue category is comprised of differential tuition revenue for a few specific graduate programs (e.g., Clinical Doctorate in Audiology, Everett MBA program, and the Counseling Training program) and internal service revenue associated with supplies and services provided by self-supporting areas to the campus community (e.g., ATUS printing stations, printing and copier services, and facilities maintenance and repairs). Earned income from university investments is also included in this amount. </p>
 
+		<h3>Fees + Financial Aid</h3>
+		<p>Fees are associated with tuition, students are charged for mandatory student fees and often course fees that are associated with registration for specific courses. All fees must be approved annually and revenue from collected fees can only be used for expenses that are aligned with the purposes for which the fee was established. While course fees are only assessed if a student registers for a specific course, mandatory fees are charged to all enrolled students and support student-initiated activities and support services that are not state-funded. </p>
+		<p>Financial Aid: The state requires that 4% of the tuition operating fee revenue be used to support student financial aid.</p>
 		<h3>Tuition Building Fee</h3>
 		<p>The tuition building fee is a component of the tuition rate charged to students, and the revenue can only be used for preventive facility maintenance and building system repairs. Use of the revenue for specific projects requires authority from the State, and the revenue cannot be used for other purposes. </p>
 
-		<h3>Fees</h3>
-		<p>Associated with tuition, students are charged for mandatory student fees and often course fees that are associated with registration for specific courses. All fees must be approved annually and revenue from collected fees can only be used for expenses that are aligned with the purposes for which the fee was established. While course fees are only assessed if a student registers for a specific course, mandatory fees are charged to all enrolled students and support student-initiated activities and support services that are not state-funded. </p>
+		
+		<h3>Net Operation Tuition $93.0M</h3>
+		<h3>Local Operating $202.7M</h3>
+		<h3>Appropriate Earmarks $24.7M</h3>
 
-		<h3>Financial Aid (FA)</h3>
-		<p>The state requires that 4% of the tuition operating fee revenue be used to support student financial aid.</p>
-<p>just adding text to test</p>
-	</body>
-</html>
+		<br>
+
+<hr>
+<br>
+
+<h1 >Total Expenses (<u>State</u> Operating)</h1>
+	<p>Made up of</p>	
+
+<div class="card-2col">
+		<div class="wwu-card">    
+			<h2 class="title">
+			  <a href="#">Salaries + Benefits $189.1M</a></h2>
+		</div>
+
+		<div class="wwu-card">    
+			<h2 class="title">
+			  <a href="#">Goods + Services $27.2M</a></h2>
+		</div>
+	</div>
+
+		<div class="wwu-card">    
+			<h3 class="title">
+			  <a href="#">Local Operating Expenses 216.3M</a></h3>
+		</div>
+
+		<div class="card-1col">
+			<div class="wwu-card">    
+				<h2 class="title">
+				  <a href="#">Compliance: Accruals & Deferrals $10.6M</a></h2>
+			</div>
+
+			<div class="wwu-card">    
+				<h3 class="title">
+				  <a href="#">Net Pension + OPEB Contra-Expenses $10.5M</a></h3>
+			</div>
+
+		</div>
+
+<hr>
+
+</main>
+</layout>
