@@ -117,59 +117,60 @@ const { title } = Astro.props;
 
 
   <!-- Everything below is not tested -->
-/* a. Grid -------------------------------------------------------------------*/
-.card-2col,
-.card-3col,
-.card-4col,
-.card-5col,
-.card-2col--view .view-content,
-.card-3col--view .view-content,
-.card-4col--view .view-content, {
-  display: grid;
-  grid-column-gap: var(--space--sm);
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-.card-2col,
-.card-2col--view .view-content {
-  @media (min-width: $small) {
-    grid-template-columns: 1fr 1fr;
+  /* a. Grid -------------------------------------------------------------------*/
+  .card-2col,
+  .card-3col,
+  .card-4col,
+  .card-5col,
+  .card-2col--view .view-content,
+  .card-3col--view .view-content,
+  .card-4col--view .view-content,
+  .card-5col--view .view-content {
+    display: grid;
+    grid-column-gap: var(--space--sm);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  .pager {
-    grid-column: 1 / span 2;
+  .card-2col,
+  .card-2col--view .view-content {
+    @media (min-width: $small) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .pager {
+      grid-column: 1 / span 2;
+    }
   }
-}
-.card-3col,
-.card-3col--view .view-content {
-  --h2-size: var(--font-size--2xl);
-  --h3-size: var(--font-size--xl);
-  --h4-size: var(--font-size--lg);
-  --h5-size: var(--font-size--md);
-  --h6-size: var(--font-size--md);
-  @media (min-width: $small) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+  .card-3col,
+  .card-3col--view .view-content {
+    --h2-size: var(--font-size--2xl);
+    --h3-size: var(--font-size--xl);
+    --h4-size: var(--font-size--lg);
+    --h5-size: var(--font-size--md);
+    --h6-size: var(--font-size--md);
+    @media (min-width: $small) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .pager {
+      grid-column: 1 / span 3;
+    }
   }
-  .pager {
-    grid-column: 1 / span 3;
+  .card-4col,
+  .card-4col--view .view-content {
+    --h2-size: var(--font-size--xl);
+    --h3-size: var(--font-size--lg);
+    --h4-size: var(--font-size--md);
+    --h5-size: var(--font-size--md);
+    --h6-size: var(--font-size--md);
+    @media (min-width: $small) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .pager {
+      grid-column: 1 / span 4;
+    }
   }
-}
-.card-4col,
-.card-4col--view .view-content {
-  --h2-size: var(--font-size--xl);
-  --h3-size: var(--font-size--lg);
-  --h4-size: var(--font-size--md);
-  --h5-size: var(--font-size--md);
-  --h6-size: var(--font-size--md);
-  @media (min-width: $small) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-  }
-  .pager {
-    grid-column: 1 / span 4;
-  }
-}
 
 .card,
 .wwu-card {
@@ -177,7 +178,7 @@ const { title } = Astro.props;
   display: flex;
   flex-flow: row wrap;
   align-content: start;
-  line-height: 1.4;
+line-height: 1.4;
 		padding: calc(1.5rem - 1px);
         margin: 40px;
         border-radius: 8px;
@@ -276,4 +277,5 @@ const { title } = Astro.props;
       line-height: 1.5;
     }
   }
+
 </style>
