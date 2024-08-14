@@ -6,7 +6,7 @@ export default defineConfig({
         format: 'file'
       },
       
-  site: 'https://<random-string>.pages.github.io',
+  site: 'https://jeanwebster.github.io',
   base: '/wwubudget',
      
 });
