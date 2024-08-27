@@ -199,24 +199,24 @@ Columns will collapse on mobile.
 .grid-column-count--6 {
   display: grid;
   grid-column-gap: var(--space--sm);
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   align-items: stretch;
 }
 @media (min-width: $medium) {
   .grid-column-count--2 {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
   .grid-column-count--3 {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .grid-column-count--4 {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .grid-column-count--5 {
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .grid-column-count--6 {
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
   }
 }
 
@@ -313,7 +313,7 @@ Molecule: Card Containers
   --h6-size: var(--font-size--sm);
   @media (min-width: $small) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .pager {
     grid-column: 1 / span 6;
