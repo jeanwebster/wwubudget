@@ -65,8 +65,9 @@ const { title } = Astro.props;
 		<script is:inline src="https://ashlar.blob.core.windows.net/ashlar-theme-files/js/main-navigation.js"></script>
 		
 		<script is:inline src="https://ashlar.blob.core.windows.net/ashlar-theme-files/js/switcher.js"></script>
-	</body>
-</html>
+
+  </body>
+  </html>
 
 	html {
 		font-family: system-ui, sans-serif;
@@ -150,7 +151,6 @@ const { title } = Astro.props;
 }
 
 
-
 /*------------------------------------------------------------------------------
 Helpers: Columns
 --------------------------------------------------------------------------------
@@ -230,7 +230,7 @@ Molecule: Card Containers
 .card-2col--view .view-content,
 .card-3col--view .view-content,
 .card-4col--view .view-content,
-.card-5col--view .view-content,
+.card-5col--view .view-content.
 .card-6col--view .view-content {
   display: grid;
   grid-column-gap: var(--space--sm);
@@ -249,14 +249,14 @@ Molecule: Card Containers
 }
 .card-3col,
 .card-3col--view .view-content {
-  --h2-size: var(--font-size--xl);
-  --h3-size: var(--font-size--lg);
-  --h4-size: var(--font-size--sm);
-  --h5-size: var(--font-size--sm);
-  --h6-size: var(--font-size--sm);
+  --h2-size: var(--font-size--2xl);
+  --h3-size: var(--font-size--xl);
+  --h4-size: var(--font-size--lg);
+  --h5-size: var(--font-size--md);
+  --h6-size: var(--font-size--md);
   @media (min-width: $small) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
   }
   .pager {
     grid-column: 1 / span 3;
@@ -266,12 +266,12 @@ Molecule: Card Containers
 .card-4col--view .view-content {
   --h2-size: var(--font-size--xl);
   --h3-size: var(--font-size--lg);
-  --h4-size: var(--font-size--sm);
-  --h5-size: var(--font-size--sm);
-  --h6-size: var(--font-size--sm);
+  --h4-size: var(--font-size--md);
+  --h5-size: var(--font-size--md);
+  --h6-size: var(--font-size--md);
   @media (min-width: $small) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
   }
   .pager {
     grid-column: 1 / span 4;
@@ -281,40 +281,38 @@ Molecule: Card Containers
 .card-5col--view .view-content {
   --h2-size: var(--font-size--lg);
   --h3-size: var(--font-size--md);
-  --h4-size: var(--font-size--sm);
+  --h4-size: var(--font-size--md);
   --h5-size: var(--font-size--sm);
   --h6-size: var(--font-size--sm);
   @media (min-width: $small) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
   }
   .pager {
     grid-column: 1 / span 5;
   }
-}
 
-.card-6col,
+  .card-6col,
 .card-6col--view .view-content {
-  --h2-size: var(--font-size--md);
-  --h3-size: var(--font-size--sm);
-  --h4-size: var(--font-size--sm);
-  --h5-size: var(--font-size--sm);
-  --h6-size: var(--font-size--sm);
+  --h2-size: var(--font-size--lg)
+  --h3-size: var(--font-size--sm)
+  --h4-size: var(--font-size--sm)
+  --h5-size: var(--font-size--sm)
+  --h6-size: var(--font-size--sm)
   @media (min-width: $small) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
   .pager {
     grid-column: 1 / span 6;
   }
 }
-
 /* b. Flex -------------------------------------------------------------------*/
 .card-2col--flex,
 .card-3col--flex,
 .card-4col--flex,
-.card-5col--flex
-.card-6col--flex  {
+.card-5col--flex,
+.card-6col--flex {
   display: flex;
   flex-flow: row wrap;
   gap: var(--space--xs);
@@ -334,7 +332,7 @@ Molecule: Card Containers
   }
 }
 .card-3col--flex {
-  --h2-size: var(--font-size--xl);
+  --h2-size: var(--font-size--2xl);
   --h3-size: var(--font-size--xl);
   --h4-size: var(--font-size--lg);
   --h5-size: var(--font-size--md);
@@ -348,11 +346,11 @@ Molecule: Card Containers
   }
 }
 .card-4col--flex {
-  --h2-size: var(--font-size--lg);
-  --h3-size: var(--font-size--md);
-  --h4-size: var(--font-size--sm);
-  --h5-size: var(--font-size--sm);
-  --h6-size: var(--font-size--sm);
+  --h2-size: var(--font-size--xl);
+  --h3-size: var(--font-size--lg);
+  --h4-size: var(--font-size--md);
+  --h5-size: var(--font-size--md);
+  --h6-size: var(--font-size--md);
   .card,
   .wwu-card,
   .hover-card {
@@ -364,7 +362,7 @@ Molecule: Card Containers
 .card-5col--flex {
   --h2-size: var(--font-size--lg);
   --h3-size: var(--font-size--md);
-  --h4-size: var(--font-size--sm);
+  --h4-size: var(--font-size--md);
   --h5-size: var(--font-size--sm);
   --h6-size: var(--font-size--sm);
   .card,
@@ -375,17 +373,18 @@ Molecule: Card Containers
     }
   }
 }
+
 .card-6col--flex {
-  --h2-size: var(--font-size--md);
-  --h3-size: var(--font-size--sm);
+  --h2-size: var(--font-size--lg);
+  --h3-size: var(--font-size--md);
   --h4-size: var(--font-size--sm);
   --h5-size: var(--font-size--sm);
-  --h6-size: var(--font-size--xsm);
+  --h6-size: var(--font-size--sm);
   .card,
   .wwu-card,
   .hover-card {
-    @media (min-width: $small) {
-      flex: 0 1 calc(16.6% - var(--space--xs));
+    @media (min-width: $sma
+      flex: 0 1 calc(16.6% - 
     }
   }
 }
@@ -405,9 +404,4 @@ Molecule: Card Containers
   }
 }
 
-.card.bordered, .wwu-card.bordered {
-    border: solid var(--gray--lighter--80) var(--border-width--md);
-}
 
-
-</style>
