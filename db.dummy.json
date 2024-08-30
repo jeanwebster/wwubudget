@@ -1,0 +1,16 @@
+{
+  "sites": [
+    { "id": 1, "url": "chss.wwu.edu", "certid": 1, "enabled": 1, "expirydate": "", "issuedate": "", "issuer": "", "subject": "" },
+    { "id": 2, "url": "oie.wwu.edu", "certid": 2, "enabled": 1, "expirydate": "", "issuedate": "", "issuer": "", "subject": "" },
+    { "id": 3, "url": "syllabi.wwu.edu", "certid": 3, "enabled": 1, "expirydate": "", "issuedate": "", "issuer": "", "subject": "" },
+    { "id": 4, "url": "provost.wwu.edu", "certid": 4, "enabled": 1, "expirydate": "", "issuedate": "", "issuer": "", "subject": "" },
+    { "id": 5, "url": "anthropology.wwu.edu", "certid": 5, "enabled": 1, "expirydate": "", "issuedate": "", "issuer": "", "subject": "" }
+  ],
+  "certs": [
+    { "id": 1, "expirydate": "2025-02-23", "issuedate": "2022-02-23", "issuer": "GoDaddy, LLC", "subject": "null" },
+    { "id": 2, "expirydate": "2025-12-23", "issuedate": "2022-12-23", "issuer": "GoMommy, LLC", "subject": "null" },
+    { "id": 3, "expirydate": "2025-06-06", "issuedate": "2022-06-06", "issuer": "SitesRUs, Inc", "subject": "null" },
+    { "id": 4, "expirydate": "2025-07-07", "issuedate": "2022-07-07", "issuer": "YourMoneyOrYourSite, Inc", "subject": "null" },
+    { "id": 5, "expirydate": "2025-08-08", "issuedate": "2022-08-08", "issuer": "Flumoxxed, Inc", "subject": "null" }
+  ] 
+}
